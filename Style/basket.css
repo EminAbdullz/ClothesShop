@@ -1,0 +1,359 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color:white;
+    font-family: Century Gothic;
+}
+body{
+    background-color: #0E141B;
+}
+/* ШАПКА */
+header{
+    z-index: 2;
+    position:fixed;
+    top: 0;
+    width: 100%;
+}
+.mobile_container{
+    display: none;
+}
+.container_header{
+    display: flex;
+    align-items:flex-end;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+
+}
+.logo{
+    width: 180px;
+    margin-top: 35px;
+}
+
+.logo img{
+    width: 100%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+.lists{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 55px;
+}
+ul{
+    display: flex;
+    gap: 30px;
+    font-size: 13px;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    align-self: flex-start;
+}
+a{
+    text-decoration: none;
+    color: white;
+    transition: .3;
+}
+a:hover , i:hover{
+    color:#D1C12B;
+}
+i{
+    color:white;
+    margin-left: 5px;
+    transition: .3s
+}
+.drop_menu_hidden{
+    display: none;
+}
+.drop_menu_shown{
+    display: flex;
+    position: absolute;
+    top: 90px;
+}
+.drop_menu_mob_hidden{
+    display: none;
+}
+/* КОНТЕНТ */
+.wrapper{
+    margin-top: 200px;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.basket{
+    width: 60%;
+}
+.basket img{
+    width: 100%;
+}
+.order{
+    display: flex;
+    margin-top: 30px;
+}
+.order_info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+}
+.choose_clothes{
+    display: flex;
+    gap: 30px;
+    justify-content:center;
+    align-items: center;
+    background-color: #10171F;
+    padding-right: 10px;
+    border-radius: 15px;
+}
+.amount{
+    display: block;
+}
+.amount > p{
+    font-size: 1.5rem;
+}
+.form{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.form > .input{
+    width:38px;
+    background-color: #10171F;
+}
+.count{
+    width: 61%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.for_p{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.button{
+    align-self: flex-end;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.hidden_{
+    font-size: 0px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border:#D1C12B 3px solid;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.show_icon i{ 
+    color:#D1C12B;
+    font-size: 25px;
+    margin-right: 4px;
+}
+.order_preparing{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.order_preparing > input{
+    background-color: #10171F;
+    width: 23rem;
+    height: 40px;
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.order_preparing button{
+    margin-top: 30px;
+    width: 150px;
+    border: #D1C12B 2px solid;
+    background-color:#0D131A;
+    height: 35px;
+    border-radius: 20px;
+    font-size: 13px;
+    color:#D1C12B;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+.order_preparing button:hover{
+    box-shadow: 0px 0px 75px 24px rgba(222,201,10,0.75);
+    transform: translateY(-7px);
+}
+/* ПОДВАЛ */
+.content{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 100px;
+    padding: 50px;
+    font-size: 1rem;
+}
+.logo_footer{
+    width: 15rem;
+}
+.logo_footer img{
+    width: 100%;
+}
+
+
+/* MEDIA */
+
+@media screen and (max-width:1920px){
+}
+@media screen and (max-width:1200px){
+    .order{
+        flex-direction: column;
+    }
+    .order_info{
+        align-items: center;
+    }
+    .order_preparing{
+        align-self: center;
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width:992px){
+    /* HEADER */
+    .social , .logo{
+        display: none;
+    }
+    nav{
+        width: 100%;
+    }
+    .lists ul:first-child{
+        gap: 100px;
+        width: 100%;
+    }
+    .lists ul:last-child{
+        align-self: center;
+        justify-content: space-between;
+        width: 50%;
+    }
+    a{
+        font-size: 8px;
+    }
+    .social_main{
+        display: block;
+    }
+
+    .count{
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+    .button{
+        align-self: center;
+    }
+
+        /* ПОДВАЛ */
+        .content{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .content p, .social_footer{
+            display: none;
+        }
+}
+@media screen and (max-width:768px){
+    /* HEADER */
+    .container_header{
+        display: none;
+    }
+    .mobile_container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0px auto;
+        padding-top: 30px;
+        position: relative;
+    }
+    .social_{
+        display: block;
+    }
+    .hidden{
+        display: none;
+    }
+    .shown{
+        display: block;
+        position: absolute;
+        top: 50px;
+        left: 1%;
+    }
+    .shown ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 5px;
+        font-size: 10px;
+    }
+    .mobile_container > i{
+        cursor: pointer;
+        color:#D1C12B;
+    }
+    .body{
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+    }
+    .drop_menu_mob_hidden{
+        display: none;
+        opacity: 0;
+    }
+    .drop_menu_mob_shown{
+        display: flex;
+        opacity: 1;
+        position: absolute;
+        left: 45%;
+        bottom:30%
+    }
+    .choose_clothes{
+        flex-direction: column;
+    }
+
+
+
+}
+@media screen and (max-width:570px){
+    .container_header{
+        width: 100%;
+    }
+    .form{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .order_preparing > input{
+        width: 18rem;
+    }
+}
+
+

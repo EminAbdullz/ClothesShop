@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2e18f2b45c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Style/catalog.css">
+    <title>CATALOG</title>
+</head>
+<body>
+    <script src="../JS/catalog.js" defer></script>
+    <header onscroll="head_scrolled()">
+        <div class="container_header">
+            <nav>
+                <div class="logo" >
+                    <img src="../Assets/Лого.svg" alt="logo">
+                </div>
+                <div class="lists">
+                    <ul>
+                        <li>
+                            <a href="./index.html" target="_blank">ГЛАВНАЯ</a>
+                            <i class="fa-solid fa-caret-down" onclick="open_drop_menu()"></i>
+                        </li>
+                        <li><a href="./collection.html">КОЛЛЕКЦИИ</a></li>
+                        <li><a href="./about.html" target="_blank">О НАС</a></li>
+                        <li><a href="">КОНТАКТЫ</a></li>
+                        <li><a href="./basket.html" target="_blank">КОРЗИНА</a></li>
+                    </ul>
+                    <ul class="drop_menu_hidden">
+                        <li><a href="">ДЕВУШКАМ</a></li>
+                        <li><a href="">МУЖЧИНАМ</a></li>
+                        <li><a href="">УНИСЕКС</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="social">
+                <a href="https://telegram.org/" target="_blank">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+
+                <a href="https://twitter.com/" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+                </a>
+
+                <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+           <!-- MOBILE_HEADER -->
+        <div class="mobile_container">
+            <i class="fa-solid fa-bars" onclick="press_here();open_blur()"></i>
+            <nav class="hidden" id="hidden">
+                <ul>
+                    <li>
+                        <a href="">ГЛАВНАЯ</a>
+                        <i class="fa-solid fa-caret-right" onclick="open_drop_menu_mob()"></i>
+                    </li>
+                    <li><a href="">КОЛЛЕКЦИИ</a></li>
+                    <li><a href="">О НАС</a></li>
+                    <li><a href="">КОНТАКТЫ</a></li>
+                    <li><a href="">КОРЗИНА</a></li>
+                </ul>
+                <ul class="drop_menu_mob_hidden">
+                    <li><a href="">ДЕВУШКАМ</a></li>
+                    <li><a href="">МУЖЧИНАМ</a></li>
+                    <li><a href="">УНИСЕКС</a></li>
+                </ul>
+            </nav>
+            <div class="social_mob">
+                <a href="https://telegram.org/" target="_blank">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+    
+                <a href="https://twitter.com/" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+                </a>
+    
+                <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <main class="container">
+            <div class="collection">
+            </div>
+            <div class="content">
+                <ul>
+                    <li>ПЛАЩИ</li>
+                    <li>КУРТКИ</li>
+                    <li>КОФТЫ</li>
+                    <li>КОМБИНЕЗОНЫ</li>
+                    <li>КЕПКИ</li>
+                    <li>СУМКИ</li>
+                    <li>
+                        <img src="../Assets/Ellipse 6.svg" alt="">
+                        <img src="../Assets/Ellipse 5.svg" alt="">
+                        <img src="../Assets/Ellipse 4.svg" alt="">
+                        <img src="../Assets/Ellipse 3.svg" alt="">
+                    </li>
+                </ul>
+                <div class="flip_cards">
+                    <div class="wear_">
+                        <div class="wearing_">
+                            <h3>ХОЧУ!</h3>
+                            <div class="front_">
+                                <img src="../Assets/товар 1.svg" alt="">
+                            </div>
+                            <div class="back_">
+                                <a href="./basket.html" target="_blank">
+                                    <button>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        В КОРЗИНУ!
+                                    </button>
+                                </a>  
+                            </div>
+                        </div>
+                        <div class="price_">
+                            <p>Костюм Advolatum<br>
+                                соцветие</p>
+                                <div class="basket_">
+                                    <p><img src="../Assets/3751 ₽.svg" alt=""></p>
+                                    <a href="../Sites/basket.html" target="_blank">В КОРЗИНУ</a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="wear_">
+                        <div class="wearing_">
+                            <h3>ХОЧУ!</h3>
+                            <div class="front_">
+                                <img src="../Assets/товар 2.svg" alt="">
+                            </div>
+                            <div class="back_">
+                                <a href="./basket.html" target="_blank">
+                                    <button>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        В КОРЗИНУ!
+                                    </button>
+                                </a>  
+                            </div>
+                        </div>
+                        <div class="price_">
+                            <p>Костюм Advolatum<br>
+                                соцветие</p>
+                                <div class="basket_">
+                                    <p><img src="../Assets/3751 ₽.svg" alt=""></p>
+                                    <a href="../Sites/basket.html" target="_blank">В КОРЗИНУ</a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="wear_">
+                        <div class="wearing_">
+                            <h3>ХОЧУ!</h3>
+                            <div class="front_">
+                                <img src="../Assets/товар 1.svg" alt="">
+                            </div>
+                            <div class="back_">
+                                <a href="./basket.html" target="_blank">
+                                    <button>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        В КОРЗИНУ!
+                                    </button>
+                                </a>  
+                            </div>
+                        </div>
+                        <div class="price_">
+                            <p>Костюм Advolatum<br>
+                                соцветие</p>
+                                <div class="basket_">
+                                    <p><img src="../Assets/3751 ₽.svg" alt=""></p>
+                                    <a href="../Sites/basket.html" target="_blank">В КОРЗИНУ</a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="wear_">
+                        <div class="wearing_">
+                            <h3>ХОЧУ!</h3>
+                            <div class="front_">
+                                <img src="../Assets/товар 2.svg" alt="">
+                            </div>
+                            <div class="back_">
+                                <a href="./basket.html" target="_blank">
+                                    <button>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        В КОРЗИНУ!
+                                    </button>
+                                </a>  
+                            </div>
+                        </div>
+                        <div class="price_">
+                            <p>Костюм Advolatum<br>
+                                соцветие</p>
+                                <div class="basket_">
+                                    <p><img src="../Assets/3751 ₽.svg" alt=""></p>
+                                    <a href="../Sites/basket.html" target="_blank">В КОРЗИНУ</a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="wear_">
+                        <div class="wearing_">
+                            <h3>ХОЧУ!</h3>
+                            <div class="front_">
+                                <img src="../Assets/товар 1.svg" alt="">
+                            </div>
+                            <div class="back_">
+                                <a href="./basket.html" target="_blank">
+                                    <button>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        В КОРЗИНУ!
+                                    </button>
+                                </a>  
+                            </div>
+                        </div>
+                        <div class="price_">
+                            <p>Костюм Advolatum<br>
+                                соцветие</p>
+                                <div class="basket_">
+                                    <p><img src="../Assets/3751 ₽.svg" alt=""></p>
+                                    <a href="../Sites/basket.html" target="_blank">В КОРЗИНУ</a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="wear_">
+                        <div class="wearing_">
+                            <h3>ХОЧУ!</h3>
+                            <div class="front_">
+                                <img src="../Assets/товар 2.svg" alt="">
+                            </div>
+                            <div class="back_">
+                                <a href="./basket.html" target="_blank">
+                                    <button>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        В КОРЗИНУ!
+                                    </button>
+                                </a>  
+                            </div>
+                        </div>
+                        <div class="price_">
+                            <p>Костюм Advolatum<br>
+                                соцветие</p>
+                                <div class="basket_">
+                                    <p><img src="../Assets/3751 ₽.svg" alt=""></p>
+                                    <a href="../Sites/basket.html" target="_blank">В КОРЗИНУ</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </main>
+        <footer class="container">
+            <div class="content">
+                <p>политика конфиденциальности<br>
+                    согласие на обработку персональных данных</p>
+                <div class="logo_footer">
+                    <img src="../Assets/Лого.svg" alt="">
+                </div>
+                <div class="social_footer">
+                    <a href="https://telegram.org/" target="_blank">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+    
+                    <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                    </a>
+    
+                    <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>    
+        </footer>
+    </div>
+</body>
+</html>
